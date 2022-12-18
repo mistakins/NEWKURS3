@@ -2,12 +2,12 @@
 
 struct Newspaper {
 
-	int subscriptionIndex; // Подписной индекс
-	string name;           // Название издания
-	string publisher;      // Издательство
-	int circulation;       // Тираж
-	int period;            // Периодичность выхода
-	int price;             // Цена
+	int subscriptionIndex; // РџРѕРґРїРёСЃРЅРѕР№ РёРЅРґРµРєСЃ
+	string name;           // РќР°Р·РІР°РЅРёРµ РёР·РґР°РЅРёСЏ
+	string publisher;      // РР·РґР°С‚РµР»СЊСЃС‚РІРѕ
+	int circulation;       // РўРёСЂР°Р¶
+	int period;            // РџРµСЂРёРѕРґРёС‡РЅРѕСЃС‚СЊ РІС‹С…РѕРґР°
+	int price;             // Р¦РµРЅР°
 
 
 	Newspaper() {
@@ -15,43 +15,43 @@ struct Newspaper {
 
 
 	void inputNewspaper() {
-		cout << "Подписной индекс: " << this->subscriptionIndex << endl;
-		cout << "Название издания: " << this->name << endl;
-		cout << "Издательство: " << this->publisher << endl;
-		cout << "Тираж: " << this->circulation << endl;
-		cout << "Периодичность выхода: " << this->period << endl;
-		cout << "Цена: " << this->price << endl;
+		cout << "РџРѕРґРїРёСЃРЅРѕР№ РёРЅРґРµРєСЃ: " << this->subscriptionIndex << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ РёР·РґР°РЅРёСЏ: " << this->name << endl;
+		cout << "РР·РґР°С‚РµР»СЊСЃС‚РІРѕ: " << this->publisher << endl;
+		cout << "РўРёСЂР°Р¶: " << this->circulation << endl;
+		cout << "РџРµСЂРёРѕРґРёС‡РЅРѕСЃС‚СЊ РІС‹С…РѕРґР°: " << this->period << endl;
+		cout << "Р¦РµРЅР°: " << this->price << endl;
 	}
 
 
 	void showNewspaper() {
-		cout << "Подписной индекс: " << this->subscriptionIndex << endl;
-		cout << "Название издания: " << this->name << endl;
-		cout << "Издательство: " << this->publisher << endl;
-		cout << "Тираж: " << this->circulation << endl;
-		cout << "Периодичность выхода: " << this->period << endl;
-		cout << "Цена: " << this->price << endl;
+		cout << "РџРѕРґРїРёСЃРЅРѕР№ РёРЅРґРµРєСЃ: : " << this->subscriptionIndex << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ РёР·РґР°РЅРёСЏ: " << this->name << endl;
+		cout << "РР·РґР°С‚РµР»СЊСЃС‚РІРѕ: " << this->publisher << endl;
+		cout << "РўРёСЂР°Р¶: " << this->circulation << endl;
+		cout << "РџРµСЂРёРѕРґРёС‡РЅРѕСЃС‚СЊ РІС‹С…РѕРґР°: " << this->period << endl;
+		cout << "Р¦РµРЅР°: " << this->price << endl;
 	}
 
 
 	void editNewspaper() {
-		cout << "Подписной индекс: " << this->subscriptionIndex << endl;
-		this->subscriptionIndex = inputInt("Введите подписной индекс: ");
+		cout << "РџРѕРґРїРёСЃРЅРѕР№ РёРЅРґРµРєСЃ: " << this->subscriptionIndex << endl;
+		this->subscriptionIndex = inputInt("Р’РІРµРґРёС‚Рµ РїРѕРґРїРёСЃРЅРѕР№ РёРЅРґРµРєСЃ: ");
 
-		cout << "Название издания: " << this->name << endl;
-		this->name = inputString("Введите название газеты или журнала: ");
+		cout << "РќР°Р·РІР°РЅРёРµ РёР·РґР°РЅРёСЏ: " << this->name << endl;
+		this->name = inputString("Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РіР°Р·РµС‚С‹ РёР»Рё Р¶СѓСЂРЅР°Р»Р°: ");
 
-		cout << "Издательство: " << this->publisher << endl;
-		this->publisher = inputString("Введите издательство: ");
+		cout << "РР·РґР°С‚РµР»СЊСЃС‚РІРѕ: " << this->publisher << endl;
+		this->publisher = inputString("Р’РІРµРґРёС‚Рµ РёР·РґР°С‚РµР»СЊСЃС‚РІРѕ: ");
 
-		cout << "Тираж: " << this->circulation << endl;
-		this->circulation = inputInt("Введите тираж: ");
+		cout << "РўРёСЂР°Р¶: " << this->circulation << endl;
+		this->circulation = inputInt("Р’РІРµРґРёС‚Рµ С‚РёСЂР°Р¶: ");
 
-		cout << "Периодичность выхода: " << this->period << endl;
-		this->period = inputInt("Введите периодичность выхода: ");
+		cout << "РџРµСЂРёРѕРґРёС‡РЅРѕСЃС‚СЊ РІС‹С…РѕРґР°: " << this->period << endl;
+		this->period = inputInt("Р’РІРµРґРёС‚Рµ РїРµСЂРёРѕРґРёС‡РЅРѕСЃС‚СЊ РІС‹С…РѕРґР°: ");
 
-		cout << "Цена: " << this->price << endl;
-		this->price = inputInt("Введите цену: ");
+		cout << "Р¦РµРЅР°: " << this->price << endl;
+		this->price = inputInt("Р’РІРµРґРёС‚Рµ С†РµРЅСѓ: ");
 	}
 
 
