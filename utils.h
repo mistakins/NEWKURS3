@@ -142,7 +142,7 @@ string inputFilename(string prompt) {
 
 
 string checkOpenFile() {
-	string path = inputFilename("Введите имя файла: ");
+	string path = inputFilename("Р’РІРµРґРёС‚Рµ РёРјСЏ С„Р°Р№Р»Р°: ");
 	ifstream fin;
 	fin.exceptions(ifstream::badbit | ifstream::failbit);
 	try
@@ -154,14 +154,14 @@ string checkOpenFile() {
 	catch (const std::exception& ex)
 	{
 		cout << ex.what() << endl;
-		cout << "Не удалось открыть файл для чтения!" << endl;
+		cout << "РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РґР»СЏ С‡С‚РµРЅРёСЏ!" << endl;
 		checkOpenFile();
 	}
 }
 
 
 string checkOutputFile() {
-	string path = inputFilename("Введите имя файла: ");
+	string path = inputFilename("Р’РІРµРґРёС‚Рµ РёРјСЏ С„Р°Р№Р»Р°: ");
 	ofstream fout;
 	fout.exceptions(ofstream::badbit | ofstream::failbit);
 	try
@@ -173,7 +173,7 @@ string checkOutputFile() {
 	catch (const std::exception& ex)
 	{
 		cout << ex.what() << endl;
-		cout << "Не удалось открыть файл для записи!" << endl;
+		cout << "РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РґР»СЏ Р·Р°РїРёСЃРё!" << endl;
 		checkOutputFile();
 	}
 }
